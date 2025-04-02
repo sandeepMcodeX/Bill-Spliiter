@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-1">
+            <p>Bill</p>
+            <div class="input-container">
+                <span class="ruppee-sty">₹</span>
+                <input class="input-sty" type="text">
+            </div>
+            <!-- Tip -->
+            <div class="tip-container">
+                <h3>Select Tip </h3>
+                <div class="tip-row">
+                    <button type="submit" class="tip-percent-sty">5%</button>
+                    <button type="submit" class="tip-percent-sty">10%</button>
+                    <button type="submit" class="tip-percent-sty">15%</button>
+                </div>
+                <div class="tip-row">
+                    <button type="submit" class="tip-percent-sty">5%</button>
+                    <button type="submit" class="tip-percent-sty">10%</button>
+                    <button type="submit" class="tip-percent-sty">15%</button>
+                </div>
+            </div>
+            <div>
+                <input class="custom-input-sty" type="text" placeholder="Custom Tip in Percentage">
+            </div>
+            <div class="Number-people">
+
+                <h3>Number of People</h3>
+                <input class="custom-input-sty" type="text" placeholder="Number of people">
+            </div>
+            <button  type="submit" class="generate-bill-btn">Generate Bill</button>
+        </div>
+        <div class="col-2">
+            <div class="tip-amount">
+                <h2 class="col-2-heading">Tip amount</h2>
+                <p>0</p>
+            </div>
+            <div class="total">
+                <h2 class="col-2-heading">Total</h2>
+                <p>0</p>
+            </div>
+            <div class="person-bill">
+                <h2 class="col-2-heading">Each Person Bill</h2>
+                <p>0</p>
+            </div>
+            <button class="reset-btn-sty" type="submit"></button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
