@@ -99,7 +99,6 @@ body {
 
 /* col-2 */
 .col-2{
-  margin-top: 28px;
   width:100%;
  max-width:400px;
   background-color: teal;
@@ -117,4 +116,7 @@ padding: 28px;
 }
 .reset-btn-sty{
   padding: 20px;
+}
+.outputDisplay{
+ margin: 5px 0px;
 }
