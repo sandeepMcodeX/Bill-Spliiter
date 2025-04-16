@@ -1,117 +1,165 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
 }
-
 body {
+  background-color: #23262d;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: 'Winky Sans';
+  padding-inline: 20px;
 }
 .container {
   width: 100%;
-  max-width: 700px;
-  margin-top: 50px;
+  max-width: 720px;
+  min-height: 300px;
   display: flex;
+  column-gap: 24px;
 }
-/* col-one  */
-.col-1 {
+.left-col {
   width: 100%;
-  max-width: 320px; 
+  max-width: 330px;
+  min-height: 420px;
 }
-.col-1 p {
-  font-size: 20px;
-  color: blueviolet;
-  margin-bottom: 10px;
-}
-.input-container{
- border: 2px solid black;
- display: flex;
- align-items: center;
- padding-left:10px;
- column-gap: 5px;
- border-radius: 5px;
- overflow: hidden;
- margin-bottom: 16px;
-}
-.ruppee-sty{
-  font-size: 20px;
-  color:blueviolet;
-  font-weight: 500;
-}
-.input-sty{
+.right-col {
   width: 100%;
-  border: none;
-  outline: none;
- height: 36px;
- font-size: 20px;
- color: blueviolet;
-}
-/* tip */
-.tip-container h3{
- color: blueviolet;
- font-weight: 400;
- margin-bottom: 10px;
- font-size: 24px;
-}
-.tip-row{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-.tip-percent-sty{
-  width: 97px;
-  border: none;
-  background-color: blueviolet;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  border-radius: 7px;
-}
-.custom-input-sty{
-   width: 100%;
-   padding: 8px 0px;
-   font-size: 16px;
-   background-color:#DDDDDD;
-   padding-left: 6px;
-   border: none;
-   outline: none;
-   border-radius: 4px;
-}
-.Number-people h3{
-  margin-top: 19px;
-  color: blueviolet;
- font-weight: 400;
- margin-bottom: 10px;
- font-size: 20px;
-}
-.generate-bill-btn{
-  margin-top: 16px;
-  padding: 15px;
-  width: 100%;
-  color: white;
-    background-color: blueviolet;
-   border: none;
-   border-radius: 6px;
-   font-size: 16px;
-}
-
-/* col-2 */
-.col-2{
-  width:100%;
- max-width:400px;
-  background-color: teal;
-  border-radius: 6px;
+  max-width: 350px;
+  min-height: 390px;
+  background-color: #232427;
+  align-self: center;
+  border-radius: 12px;
+  box-shadow:1px 1px 4px 1px black;
+  padding: 28px;
   display: flex;
   flex-direction: column;
-padding: 28px;
-  row-gap: 32px;
-  align-self: center;
+  justify-content: space-between;
 }
-.col-2-heading{
+.bill-box {
+  color: #e89429;
+  margin-bottom: 24px;
+}
+.heading-sty {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #e89429;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  background-color:#2a2c30;
+  border-radius: 5px;
+
+}
+.input-container span {
+  font-size: 1.5em;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.bill-input-sty {
+  width: 100%;
+  max-width: 330px;
+  padding: 10px 0px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  padding-right: 5px;
+  color: #e89429;
+  font-weight: 600;
+}
+
+.tip-btn-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.tip-btn-row-one,
+.tip-btn-row-two {
+  display: flex;
+  gap: 16px;
+}
+.btn-sty {
+  width: 100%;
+  padding: 10px 28px;
+  background-color: #e89429;
   color: white;
-  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.btn-sty:hover{
+  cursor: pointer;
+  background-color: #d7533c;
+}
+.custom-tip {
+  margin: 20px 0px 28px 0px;
+}
+.customTip-input-sty,
+.numberPeople-input-sty {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #bfa092;
+  padding: 10px 10px;
+  font-size: 1em;
+  outline: none;
+  color: white;
+}
+.generate-btn-sty {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px 0px;
+  font-size: 1em;
+  border: none;
+  background-color: #e89429;
+  color: white;
+  border-radius: 8px;
+}
+/* right-col */
+.bill-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bill-container h3{
+  color: #e89429;
+}
+.bill-container p{
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #76B574;
+}
+.bill-amount-display{
+  display: none;
+}
+.reset-btn-sty{
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  background-color:#d7533c;
+  color: white;
 
 }
-
+@media(max-width:650px){
+  body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container{
+    flex-direction: column;
+    row-gap: 36px;
+  }
+  .left-col{
+    max-width: 700px;
+    
+  }
+  .right-col{
+    align-self: flex-start;
+    max-width: 700px;
+  }
+}
