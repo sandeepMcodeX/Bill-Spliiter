@@ -4,53 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Splitter </title>
+    <title>Bill Splitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="col-1">
-            <p>Bill</p>
-            <div class="input-container">
-                <span class="ruppee-sty">₹</span>
-                <input class="input-sty" type="text">
-            </div>
-            <!-- Tip -->
-            <div class="tip-container">
-                <h3>Select Tip </h3>
-                <div class="tip-row">
-                    <button type="submit" class="tip-percent-sty">5%</button>
-                    <button type="submit" class="tip-percent-sty">10%</button>
-                    <button type="submit" class="tip-percent-sty">15%</button>
-                </div>
-                <div class="tip-row">
-                    <button type="submit" class="tip-percent-sty">5%</button>
-                    <button type="submit" class="tip-percent-sty">10%</button>
-                    <button type="submit" class="tip-percent-sty">15%</button>
+        <div class="left-col">
+            <!-- bill -->
+            <div class="bill-box">
+                <h3 class="heading-sty">Bill</h3>
+                <div class="input-container">
+                    <span>₹</span>
+                    <input class="bill-input-sty" type="number" name="billinput" id="">
                 </div>
             </div>
-            <div>
-                <input class="custom-input-sty" type="text" placeholder="Custom Tip in Percentage">
+            <!-- tip -->
+            <div class="tip-box">
+                <h3 class="heading-sty">Select Tip</h3>
+                <div class="tip-btn-container">
+                    <div class="tip-btn-row-one">
+                        <button type="submit" class="btn-sty">5%</button>
+                        <button type="submit" class="btn-sty">10%</button>
+                        <button type="submit" class="btn-sty">15%</button>
+                    </div>
+                    <div class="tip-btn-row-two">
+                        <button type="submit" class="btn-sty">25%</button>
+                        <button type="submit" class="btn-sty">50%</button>
+                        <button type="submit" class="btn-sty">75%</button>
+                    </div>
+                     
+                </div>
             </div>
-            
-        <div class="col-2">
-            <div class="tip-amount">
-                <h2 class="col-2-heading">Tip amount</h2>
-                <p class="outputDisplay">0</p>
-            </div>
-            <div class="total">
-                <h2 class="col-2-heading">Total</h2>
-                <p class="outputDisplay">0</p>
-            </div>
-            <div class="person-bill">
-                <h2 class="col-2-heading">Each Person Bill</h2>
-                <p class="outputDisplay">0</p>
-            </div>
-            <button class="reset-btn-sty" type="submit">Generate Bill</button>
+            <!-- custom tip -->
+             <div class="custom-tip">
+                <input class="customTip-input-sty" type="number" placeholder="Custom Tip in Percentage">
+             </div>
+             <!-- number of people -->
+              <div class="number-people-container">
+                <h3 class="heading-sty">Number of People</h3>
+                <input  class="numberPeople-input-sty" type="number"   placeholder="Number of people">
+              </div>
+              <!-- Generate bill -->
+               <button type="submit" class="generate-btn-sty">Generate Bill</button>
+        </div>
+        <div class="right-col">
+             <div class="bill-container">
+                <h3>Tip amount</h3>
+                <p class="bill-amount-display"><span>₹</span>10000</p>
+             </div>
+             <div class="bill-container">
+                <h3>Total</h3>
+                <p class="bill-amount-display"><span>₹</span>10000</p>
+             </div>
+             <div class="bill-container">
+                <h3>Each Person Bill</h3>
+                <p class="bill-amount-display"><span>₹</span>10000</p>
+             </div>
+             <button class="reset-btn-sty"  type="submit">Reset</button>
         </div>
     </div>
-    
 </body>
 
 </html>
