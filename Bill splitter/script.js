@@ -9,7 +9,7 @@ const tipsContainer = document.querySelector('.tip-btn-container');
 const resetButton = document.querySelector('.reset-btn-sty');
 
 
-let tipPercent = 0;
+let tipPercent = 0 ;
 generateBillBtn.addEventListener('click', () => {
   const billAmount = parseInt(billAmountInput.value);
   const numberOfPeople = parseInt(numberOfPeopleInput.value);
